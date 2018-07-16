@@ -1,0 +1,23 @@
+{
+  "name": "autometalogolex",
+  "version": "0.1.0",
+  "description": "The home for Autometalogolexists",
+  "main": "autometalogolex.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fakefred/autometalogolex.git"
+  },
+  "author": "fakefred",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/fakefred/autometalogolex/issues"
+  },
+  "homepage": "https://github.com/fakefred/autometalogolex#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "express3-handlebars": "^0.5.2"
+  }
+}

@@ -1,0 +1,10 @@
+body {
+    font-size: 24px;
+    font-family: 'Noto Sans', 'Helvetica', 'Arial', sans-serif;
+    text-align: center;
+}
+
+#image {
+    margin-left: 5%;
+    width: 90%;
+}
