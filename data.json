@@ -1,5 +1,8 @@
 [
-    ["Binary Search", "/img/binary_search.png", 
+    ["Binary Search", "binary_search.png", 
         "'Your number is A FLOAT? You're cheating!' 'Who cares? I did not declare it as an int.'", 
-        "07", "13", "2018"]
+        "07", "13", "2018"],
+    ["Granny Certificate", "granny_certificate.png",
+        "'Wait, I did not see you in the sudoers file. How did you gain access to port 443?'",
+        "07", "16", "2018"]
 ]

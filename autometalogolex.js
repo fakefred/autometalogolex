@@ -12,7 +12,7 @@ app.use(express.static(__dirname + '/public'));
 app.get('/', (req, res) => {
     let latestIndex = datajson.length - 1;
     let title = datajson[latestIndex][0],
-        source = datajson[latestIndex][1]
+        source = '/img/' + datajson[latestIndex][1]
         text = datajson[latestIndex][2],
         date = datajson[latestIndex][3] + '/' + datajson[latestIndex][4] + '/' + datajson[latestIndex][5],
         prev = latestIndex - 1,
@@ -40,7 +40,7 @@ app.get('/*', (req,res) => {
     let prev, next;
     if (path >= 0 && path < datajson.length){
         let title = datajson[path][0],
-            source = datajson[path][1]
+            source = '/img/' + datajson[path][1]
             text = datajson[path][2],
             date = datajson[path][3] + '/' + datajson[path][4] + '/' + datajson[path][5];
         if (path === 0 || datajson.length === 1){
