@@ -4,7 +4,7 @@ let handlebars = require('express3-handlebars').create({defaultLayout: 'image'})
 app.engine('handlebars', handlebars.engine);
 app.set('view engine', 'handlebars');
 app.set('port', process.env.PORT || 3000);
-let datajson = require('./data.json');
+let datajson = require('./public/img/data.json');
 
 app.use(express.static(__dirname + '/public'));
 
