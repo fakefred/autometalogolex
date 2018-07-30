@@ -4,10 +4,8 @@ body {
     text-align: center;
 }
 
-#image {
-    margin-left: 5%;
-    max-height: 96%;
-    max-width: 90%;
+a {
+    color: darkblue;
 }
 
 #license {

@@ -27,11 +27,21 @@ app.get('/', (req, res) => {
     });
 });
 
-// easter egg implemented in honor of xkcd
-app.get('/404', (req, res) => {
-    res.render('404', {
-        layout: 'error'
+// special pages router
+app.get('/archive', (req, res) => {
+    let comic = [];
+    for(i = datajson.length; i > 0; i--){
+        comic[datajson.length - i] = '<a href="/' + (i-1) + '" class="item">' + datajson[i-1][0] + '</a> \
+        (' + datajson[i-1][3] + '/' + datajson[i-1][4] + '/' + datajson[i-1][5] + ')<br/>';
+    }
+    res.render('archive', {
+        layout: 'archive',
+        comic
     });
+});
+
+app.get('/about', (req, res) => {
+    res.render('about', { layout: 'about' });
 });
 
 // other routes in integers return corresponding comic

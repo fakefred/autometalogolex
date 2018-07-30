@@ -4,10 +4,12 @@ body {
     text-align: center;
 }
 
-#image {
-    margin-left: 5%;
-    max-height: 96%;
-    max-width: 90%;
+#about {
+    text-align: left;
+    left: 16px;
+    font-family: 'Noto Mono', 'Ubuntu Mono', 'Courier New', monospace;
+    font-size: 16px;
+    line-height: 80%;
 }
 
 #license {
